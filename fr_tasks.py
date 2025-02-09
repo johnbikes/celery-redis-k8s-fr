@@ -32,9 +32,9 @@ class InsightFaceTask(Task):
 
         random_im = np.random.rand(640, 640, 3)
         random_im = (random_im*255.).astype(np.uint8)
-        cv2.imwrite('random.jpg', random_im)
+        # cv2.imwrite('random.jpg', random_im)
 
-        cv2_img = cv2.imread('random.jpg')
+        cv2_img = random_im # = cv2.imread('random.jpg')
         faces = self._app.get(cv2_img)
         logger.info(f"warmup: {faces}")
                 
