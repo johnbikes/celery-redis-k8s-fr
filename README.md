@@ -12,10 +12,12 @@
 ## Docker run
 - `docker run -it --rm python-celery`
 
-## With compose
+## With compose (recommended)
 - just build
   - `docker compose build`
 - `docker compose up` # -d to detach # --build
+- from local with celery installed
+  - `IMAGE_PATH=<SOME_IMAGE_FILE.jpg> python client.py`
 
 ## k8s - IN PROGRESS
 - apply
