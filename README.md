@@ -5,6 +5,7 @@
 ## Before running
 - update **SOME_IMAGE_FILE.jpg** in the **Dockerfile**
 - set **IMAGE_PATH** to this in your env when running **client.py**
+- download the buffalo_l zip from [model-zoo](https://github.com/deepinsight/insightface/tree/master/python-package#model-zoo)
 
 ## Docker build
 - `docker build -t python-celery .`
