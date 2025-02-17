@@ -20,7 +20,7 @@ logger.info(f"{redis_host = }, {redis_port = }")
 
 
 celery = Celery('tasks', backend=f"redis://{redis_host}", 
-                broker=f"redis://{redis_host}:{redis_port}/0")
+                broker=f"redis://{redis_host}:{redis_port}")
 
 
 class InsightFaceTask(Task):
